@@ -25,6 +25,17 @@ namespace FizzBuzz
 
             Assert.Equal("Fizz", result);
         }
+
+        [Fact]
+        public void Debe_numero_en_lugar_de_fizz_si_numero_no_es_3()
+        {
+            var fizzbuzz = new FizzBuzzGenerator();
+            int numeroInsertado = 8;
+
+            var result = fizzbuzz.ValidarNumeroFizz(numeroInsertado);
+
+            Assert.Equal(numeroInsertado.ToString(), result);
+        }
     }
 
     internal class FizzBuzzGenerator
