@@ -52,7 +52,10 @@ namespace FizzBuzz
 
         internal string ValidarNumeroFizz(int numero)
         {
-            return "Fizz";
+            if(numero == 3)
+                return "Fizz";
+
+            return numero.ToString();
         }
     }
 }
