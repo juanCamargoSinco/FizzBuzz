@@ -27,6 +27,16 @@ namespace FizzBuzz
         }
 
         [Fact]
+        public void Debe_devolver_fizz_si_numero_es_18()
+        {
+            var fizzbuzz = new FizzBuzzGenerator();
+
+            var result = fizzbuzz.ValidarNumeroFizz(18);
+
+            Assert.Equal("Fizz", result);
+        }
+
+        [Fact]
         public void Debe_numero_en_lugar_de_fizz_si_numero_no_es_3()
         {
             var fizzbuzz = new FizzBuzzGenerator();
