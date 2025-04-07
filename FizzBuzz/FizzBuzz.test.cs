@@ -1,5 +1,6 @@
 
 
+
 namespace FizzBuzz
 {
     public class FizzBuzzTest
@@ -14,6 +15,16 @@ namespace FizzBuzz
             Assert.Equal(1, result.First());
             Assert.Equal(100, result.Last());
         }
+
+        [Fact]
+        public void Debe_devolver_fizz_si_numero_es_3()
+        {
+            var fizzbuzz = new FizzBuzzGenerator();
+
+            var result = fizzbuzz.ValidarNumeroFizz(3);
+
+            Assert.Equal("Fizz", result);
+        }
     }
 
     internal class FizzBuzzGenerator
@@ -26,6 +37,11 @@ namespace FizzBuzz
                 numeros.Add(i);
             }
             return numeros;
+        }
+
+        internal string ValidarNumeroFizz(int numero)
+        {
+            throw new NotImplementedException();
         }
     }
 }
