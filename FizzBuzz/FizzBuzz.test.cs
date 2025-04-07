@@ -41,7 +41,7 @@ namespace FizzBuzz
 
         internal string ValidarNumeroFizz(int numero)
         {
-            throw new NotImplementedException();
+            return "Fizz";
         }
     }
 }
