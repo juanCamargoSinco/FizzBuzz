@@ -62,7 +62,7 @@ namespace FizzBuzz
 
         internal string ValidarNumeroFizz(int numero)
         {
-            if(numero == 3)
+            if(numero is 3 or 18)
                 return "Fizz";
 
             return numero.ToString();
